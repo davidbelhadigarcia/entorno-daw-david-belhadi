@@ -1,0 +1,16 @@
+{
+  "Cabecera DAW": {
+    "scope": "java,typescript",
+    "prefix": "cabecera",
+    "body": [
+      "/*",
+      " * Archivo: ${TM_FILENAME}",
+      " * Autor/a: ESCRIBE AQUÍ TU NOMBRE",
+      " * Fecha:   ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR}",
+      " * Módulo:  Entornos de Desarrollo - DAW",
+      " */",
+      "$0"
+    ],
+    "description": "Cabecera estándar para los archivos del proyecto"
+  }
+}

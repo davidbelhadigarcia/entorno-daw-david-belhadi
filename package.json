@@ -1,0 +1,18 @@
+{
+  "name": "plantilla-entorno-daw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plantilla de la Práctica 2 (Tema 2) de Entornos de Desarrollo - DAW",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/factura.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.202",
+    "@types/node": "20.11.30",
+    "typescript": "5.4.5"
+  }
+}

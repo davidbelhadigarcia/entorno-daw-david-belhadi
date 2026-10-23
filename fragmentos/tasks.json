@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Java: compilar, empaquetar y ejecutar",
+      "type": "shell",
+      "command": "mkdir -p build/java && javac -d build/java src/java/Factura.java && jar --create --file build/factura.jar --main-class Factura -C build/java . && java -jar build/factura.jar",
+      "problemMatcher": []
+    },
+    {
+      "label": "TypeScript: compilar y ejecutar",
+      "type": "shell",
+      "command": "npm run build && npm start",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build completo (Java + TypeScript)",
+      "dependsOn": [
+        "Java: compilar, empaquetar y ejecutar",
+        "TypeScript: compilar y ejecutar"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
